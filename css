@@ -1,0 +1,81 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: black;
+    color: white;
+    font-family: Orbitron, sans-serif;
+}
+
+#gameCanvas {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(circle at center, #000010 0%, #000000 100%);
+}
+
+#hud {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 250px;
+}
+
+#healthBar,
+#energyBar {
+    width: 100%;
+    height: 15px;
+    background: #222;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#healthFill {
+    width: 100%;
+    height: 100%;
+    background: #ff4040;
+}
+
+#energyFill {
+    width: 100%;
+    height: 100%;
+    background: #40ff80;
+}
+
+#gemCount {
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+#store {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    border: 2px solid #0ff;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    background: #0ff;
+    border: none;
+    color: black;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #00ffaa;
+}
