@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Space Shooter: Elite Expansion</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <canvas id="gameCanvas"></canvas>
+
+    <div id="hud">
+        <div id="healthBar">
+            <div id="healthFill"></div>
+        </div>
+        <div id="energyBar">
+            <div id="energyFill"></div>
+        </div>
+        <div id="gemCount">💎 0</div>
+    </div>
+
+    <div id="store" class="hidden">
+        <h2>Store</h2>
+        <button id="buyDrone">Buy Drone (50💎)</button>
+        <button id="upgradeTier">Upgrade Tier (200💎)</button>
+        <button id="closeStore">Close</button>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+
+</html>
